@@ -1,0 +1,49 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "lib": [
+      "es6"
+    ],
+    "experimentalDecorators": true,
+    "module": "commonjs",
+    "rootDir": "./src",
+    "baseUrl": ".",
+    "paths": {
+      "@controllers/*": [
+        "./src/presentations/Controllers/*"
+      ],
+      "@Dusecases/*": [
+        "./src/data/usecases/*"
+      ],
+      "@usecases/*": [
+        "./src/domain/usecases/*"
+      ],
+      "@models/*": [
+        "./src/domain/models/*"
+      ],
+      "@infra/*": [
+        "./src/infra/*"
+      ]
+    },
+    "typeRoots": [
+      ".node_modules/@types",
+      "src/@types"
+    ],
+    "types": [
+      "@types/jest",
+      "node"
+    ],
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "outDir": "./dist",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "skipLibCheck": true
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/__tests__/*.ts",
+    "src/**/*"
+  ]
+}
